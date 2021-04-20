@@ -64,5 +64,16 @@
         - memcached: 多线程 + 锁
         
 
-
-
+5. Redis 常用命令
+    
+        - keys *:                   查询当前库的所有键
+        - exists <key>:             判断某个键是否存在
+        - type <key>:               查看键的类型
+        - del <key>:                删除某个键
+        - expire <key> <seconds>:   为键值设置过期问题, 单位是秒
+        - ttl <key>:                查看还有多少秒过期, -1表示永不过期, -2表示已过期
+        - dbsize:                   查看当前数据库的key的数量
+        - flushdb:                  清空当前库
+        - flushall:                 通杀全部库
+        
+        
