@@ -48,7 +48,15 @@
             - redis-sentinel: Redis集群使用
             - redis-server: Redis服务器启动命令
             - redis-cli: 客户端, 操作入口
-        
+
+
+3. 启动Redis服务器和Redis客户端
+
+        - copy一份redis.conf到另一个目录
+        - 修改redis.conf中的daemonize no为yes, 使Redis可以在后台运行, 而不占用操作界面
+        - 启动redis-server /dir/redis.conf
+        - 启动redis-cli
+        - 测试: ping ---> PONG (Redis默认端口号为6379)
 
 
 
