@@ -59,4 +59,10 @@
         - 测试: ping ---> PONG (Redis默认端口号为6379)
 
 
+4. Redis 是单线程 + 多路IO复用技术
+
+        - memcached: 多线程 + 锁
+        
+
+
 
