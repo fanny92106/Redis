@@ -77,3 +77,26 @@
         - flushall:                 通杀全部库
         
         
+6. Redis数据类型 -- 5种
+
+        key + string, set, list, hash, zset
+
+
+7. Jedis -- Redis的Java客户端
+        
+        - 0. 导入jedis.jar包并加入项目类路径
+
+        - 1. 开放防火墙的6379端口
+![openFireWallPort6379](imagePool/openFireWallPort6379.png)
+        
+       - 2. 修改redis-server的redis.conf配置文件
+            a. comment "bind 127.0.0.1"
+            b. set "protected-mode no"
+        
+       - 3. 开启redis-server服务端as deamon process
+        
+       - 4. Java端测试
+![jedisTest](imagePool/jedisTest.png)
+        
+
+
